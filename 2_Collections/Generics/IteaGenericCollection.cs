@@ -7,10 +7,10 @@ namespace ITEA_Collections.Generics
     public class IteaGenericCollection<T> : IEnumerable<T>, IBaseGenericCollectionUsing<T>
     {
         public List<T> collection { get; set; }
-       
+
         public IteaGenericCollection()
         {
-           collection = new List<T>();
+            collection = new List<T>();
         }
 
 
@@ -23,7 +23,7 @@ namespace ITEA_Collections.Generics
         public void AddMany(T[] ts)
         {
             collection.AddRange(ts);
-            
+
         }
 
         public void Clear()
